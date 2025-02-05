@@ -134,7 +134,7 @@ typedef struct idleprm_t {
 } idleprm_t;
 
 const char *intr_name[65536] = {
-	"exit\0", "abort\0", "readc\0", "writec\0", "loadsd\0", "loadad\0", "loadid\0", "writes", "reads", "writen", "readn", NULL
+	"exit\0", "abort\0", "readc\0", "writec\0", "loadsd\0", "loadad\0", "loadid\0", "writes\0", "reads\0", "writen\0", "readn\0", NULL
 };
 
 const opboard_t opbrd[] = {
