@@ -1,2 +1,2 @@
 # idle
-Virtual Machine written in C
+Simple virtual machine written in pure C.
