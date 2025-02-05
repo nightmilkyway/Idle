@@ -1,0 +1,27 @@
+jmp _main;
+id 0x6F77206F6C6C6548;
+id 0x0000000021646C72;
+_main:
+    mov rg0, 1;
+    int loadid;
+j1: cmp rtv, 0;
+    jne l1;
+    mov t0, rtv;
+    mod t0, 256d;
+    mov rg0, t0;
+    int writec;
+    div rtv, 256d;
+    jmp j1;
+l1:
+    mov rg0, 2;
+    int loadid;
+j2: cmp rtv, 0;
+    jne l2;
+    mov t0, rtv;
+    mod t0, 256d;
+    mov rg0, t0;
+    int writec;
+    div rtv, 256d;
+    jmp j2;
+l2:
+    hlt;
